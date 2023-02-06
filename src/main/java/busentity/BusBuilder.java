@@ -39,4 +39,11 @@ public class BusBuilder {
             throw new IllegalStateException("Bus entity is uncompleted state!");
         return new Bus(busName, isBusOnLive, arrivedTime, scheduleTime);
     }
+
+    public void refresh() {
+        busName = null;
+        arrivedTime = null;
+        scheduleTime = null;
+        isBusOnLive = false;
+    }
 }
