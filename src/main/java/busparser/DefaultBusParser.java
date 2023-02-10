@@ -11,12 +11,19 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Default implementation of BusParser
+ * @author Zhuravlev N.O.
+ * @version 0.0.1
+ * @see BusParser
+ */
+
 public class DefaultBusParser implements BusParser{
-    public static final String ALL_BUSES_TABLE_CLASS = "masstransit-vehicle-snippet-view _clickable _type_bus";
-    public static final String BUS_NUMBER_CLASS = "masstransit-vehicle-snippet-view__main-text";
-    public static final String IS_LIVE_PROGNOSES_CLASS = "masstransit-prognoses-view__title _live";
-    public static final String ARRIVED_PROGNOSES_CLASS = "masstransit-prognoses-view__title-text";
-    public static final String ARRIVED_BY_SCHEDULE_CLASS = "masstransit-prognoses-view__time";
+    private static final String ALL_BUSES_TABLE_CLASS = "masstransit-vehicle-snippet-view _clickable _type_bus";
+    private static final String BUS_NUMBER_CLASS = "masstransit-vehicle-snippet-view__main-text";
+    private static final String IS_LIVE_PROGNOSES_CLASS = "masstransit-prognoses-view__title _live";
+    private static final String ARRIVED_PROGNOSES_CLASS = "masstransit-prognoses-view__title-text";
+    private static final String ARRIVED_BY_SCHEDULE_CLASS = "masstransit-prognoses-view__time";
 
     @Override
     public List<Bus> parse(String sourceURL) {

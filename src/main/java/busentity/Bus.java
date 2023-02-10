@@ -2,6 +2,13 @@ package busentity;
 
 import java.util.Objects;
 
+/**
+ * Simple entity class for persist and give data after parsing.
+ * @author Zhuravlev N.O.
+ * @version 0.0.1
+ * @see busparser.BusParser
+ */
+
 public class Bus {
     private final String busName;
     private final boolean isBusOnLive;
