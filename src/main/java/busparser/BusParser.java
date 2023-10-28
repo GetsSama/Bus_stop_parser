@@ -12,6 +12,12 @@ import java.util.List;
  * @see Bus
  */
 public interface BusParser {
+    String ALL_BUSES_TABLE_CLASS = "allBusesTableClassName";
+    String BUS_NUMBER_CLASS = "busNumberClassName";
+    String IS_LIVE_PROGNOSES_CLASS = "isLivePrognosesClassName";
+    String ARRIVED_PROGNOSES_CLASS = "arrivedPrognosesClassName";
+    String ARRIVED_BY_SCHEDULE_CLASS = "arrivedByScheduleClassName";
+
     /**
      * @param sourceURL - URL of concrete bus station in Yandex Map
      * @return List of all Bus entities which can arrived at given bus station
